@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:47 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 文章列表</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="./Public/Admin/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="./Public/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+
+    <link href="./Public/Admin/css/animate.min.css" rel="stylesheet">
+    <link href="./Public/Admin/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    
+    <div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>代金券管理</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <form class="form-horizontal m-t" name="submitForm" >
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <input id="searchcode" name="code" minlength="1" type="text" class="form-control" required="" aria-required="true" placeholder="优惠券">
+                                </div>
+                                 <button type="button" id="select-condition" class="btn btn-success"> 查询</button>
+                            </div>
+                            <hr/>
+                        </form>
+                        <p id="toolbar" class="btn-group">
+                            <button id="openformbtn" type="button" class="btn btn-primary" >
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>新增代金券
+                            </button>
+                        </p>
+                        <table class="table table-striped" id="ListTable" data-toolbar="#toolbar">
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -->
+    <div class="modal fade bs-example-modal-lg" id="Modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><p id="modelTitle">新增部门</p> </h5>
+                        <button type="button" class="close right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="ibox-content">
+                        <div id="alert" class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <div id="alert-message"></div>
+                        </div>
+                        <form class="form-horizontal m-t" id="submitForm"  action="index.php?p=admin&c=Codes&a=addCodes"  name="submitForm" enctype="multipart/form-data">
+                             <input type="hidden" name="code_id" id="code_id" value="0">
+                            <div class="form-group editnone">
+                                <label class="col-sm-3 control-label">代金券数量:</label>
+                                <div class="col-sm-4">
+                                    <input id="num" name="num" minlength="1" type="text" class="form-control" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-group editnone">
+                                <label class="col-sm-3 control-label">授权管理员:</label>
+                                <div class="col-sm-4">
+                                    <input id="username" name="username" minlength="1" type="text" class="form-control" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-group addnone">
+                                <label class="col-sm-3 control-label">优惠码:</label>
+                                <div class="col-sm-4">
+                                    <input id="code" name="code" minlength="1" type="text" class="form-control" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-group addnone">
+                                <label class="col-sm-3 control-label">所属会员:</label>
+                                <div class="col-sm-4">
+                                    <select id="name" name="name" class="form-control" data-live-search="true">
+                                        <?foreach($member as $row):?>
+                                        <option value="<?=$row['member_id']?>" maxlength="50"><?=$row['user_name']?></option>
+                                        <?endforeach;?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">代金券金额:</label>
+                                <div class="col-sm-4">
+                                    <input id="money" name="money" minlength="1" type="text" class="form-control" required="" aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-3">
+                                    <button type="button" id="sbumitbtn" class="btn btn-primary"> 提交</button>
+                                    <button type="button" id="cancel" class="btn btn-warning" > 取消</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+</div>
+
+
+
+
+    <script src="./Public/Admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="./Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="./Public/Admin/js/content.min.js?v=1.0.0"></script>
+    <script src="./Public/Admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="./Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="./Public/Admin/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="./Public/Admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="./Public/Admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="./Public/Admin/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="./Public/Admin/js/plugins/validate/messages_zh.min.js"></script>
+<!--     <script src="./Public/Admin/js/form-validate.js"></script> -->
+    <script src="./Public/Admin/js/plugins/layer/laydate/laydate.js"></script>
+
+    <script src="./Public/Admin/js/admin/codes.js?v=<?php echo time();?>"></script>
+   
+</body>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:47 GMT -->
+</html>

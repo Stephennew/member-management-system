@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: solid green 1px;
+        }
+        td,th{
+            border-collapse: collapse;
+            border: solid green 1px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>活动编号</th>
+            <th>活动标题</th>
+            <th>活动描述</th>
+            <th>活动内容</th>
+            <th>开始时间</th>
+            <th>结束时间</th>
+            <?foreach($rows as $v):?>
+                <tr>
+                    <td><?=$v['artivity_id']?></td>
+                    <td><?=$v['title']?></td>
+                    <td><?=$v['des']?></td>
+                    <td><?=$v['content']?></td>
+                    <td><?=date('Y-m-d H:i:s',$v['start'])?></td>
+                    <td><?=date('Y-m-d H:i:s',$v['end'])?></td>
+                </tr>
+            <?endforeach;?>
+
+
+        </tr>
+    </table>
+</body>
+</html>

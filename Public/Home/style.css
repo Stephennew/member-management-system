@@ -1,0 +1,1824 @@
+﻿/*-----------------------------------------------------------------------------------
+
+    Template Name: Styles bootstrap Responsive template 
+    Description: This is html5 template
+    Author: usdtheme
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------  
+     CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2. Header Area
+	   2.1 Mega menu Area
+	   2.2 Stick menu Area
+	   2.3. Mobile menu Area
+	3. Banner Area
+    4.Our Team Area
+    5.Service Area
+    6.Wellcome  Area
+    7.Portfolio Area
+    8.Testimonial Area
+    9.Blog Area
+    10.Contact Area
+    11.Footer Area
+    12.Home Page-2 Area
+    13.Blog Details CSS
+    14.Single Blog CSS
+    15.Services Page CSS
+    
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {
+	height: 100%;
+}
+.floatleft {
+	float:left;
+}
+.floatright {
+	float:right;
+}
+.alignleft {
+	float:left;
+	margin-right:15px;
+	margin-bottom: 15px;
+}
+.alignright {
+	float:right;
+	margin-left:15px;
+	margin-bottom: 15px;
+}
+.aligncenter {
+	display:block;
+	margin:0 auto 15px;
+}
+a:focus {
+	outline:0px solid;
+}
+img {max-width:100%;
+	height:auto;
+}
+.fix {
+	overflow:hidden;
+}
+p {
+	margin:0 0 15px;
+    color: #444;
+}
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Raleway', sans-serif;
+   margin: 0 0 15px;
+   color: #444;
+  line-height: normal;
+}
+ a {
+	transition: all 0.3s ease 0s;
+	text-decoration:none;
+}
+a:hover {
+  color: #f3652a;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+#scrollUp {
+  background: #000 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-size: 28px;
+  height: 45px;
+  line-height: 40px;
+  opacity: 0.6;
+  right: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 45px;
+}
+#scrollUp:hover {
+    background: #f3652a;
+    opacity: 1;
+    border: 1px solid #f3652a;
+}
+.clear{
+	clear:both;
+}
+input, select, textarea, input[type="text"], input[type="date"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"], button, button[type="submit"] {
+  -moz-appearance: none;
+  box-shadow: none !important;
+}
+body {
+  background: #fff none repeat scroll 0 0;
+  color: #444;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  overflow-x: hidden;
+  line-height: 22px;
+}
+div#preloader { position: fixed; left: 0; top: 0; z-index: 99999; width: 100%; height: 100%; overflow: visible; background: #fff url('img/logo/preloader.gif') no-repeat center center; }
+
+::-moz-selection {
+    background: #f3652a;
+    text-shadow: none;
+}
+::selection {
+    background: #f3652a;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/*----------------------------------------*/
+/*  2.  Header Area 
+/*----------------------------------------*/
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.header-area {
+  background: rgba(36, 35, 39, 0.7) none repeat scroll 0 0;
+}
+.header-area{left: 0;
+margin: 0 auto;
+max-width: 100%;
+position: fixed !important;
+right: 0;
+top: 0;
+z-index: 9999;
+}
+.logo {
+  padding: 0;
+  display: block;
+}
+.logo a {
+  display: inline-block;
+  padding: 11px 0;
+}
+.mainmenu{
+    float: right;
+}
+.mainmenu ul#nav>li {
+  float: left;
+  position: relative;
+}
+.mainmenu ul#nav > li > a {
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 30px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mainmenu ul#nav >li:hover>a {
+    background:rgba(0, 0, 0, 0.85);
+}
+.mainmenu ul#nav > li > a:hover {
+  box-sizing: border-box;
+  color: #f3652a;
+}
+.mainmenu ul#nav li ul.sub-menu {
+  background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
+  opacity: 0;
+  padding: 20px 0;
+  position: absolute;
+  top: 115%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 260px;
+  z-index: -99;
+  right: 0;
+}
+.mainmenu ul#nav li ul.sub-menu li{
+   padding: 0;
+   width: 100%;
+}
+.mainmenu ul#nav li:hover ul.sub-menu{
+    top:100%;
+    opacity:1;
+    z-index:999;
+    visibility:visible;
+}
+.mainmenu ul#nav li ul.sub-menu li a {
+  color: #888888;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 30px;
+  padding: 7px 0;
+  text-transform: capitalize;
+}
+.mainmenu ul#nav li:hover ul.sub-menu li a:hover{
+    color:#f3652a;
+}
+.mainmenu ul#nav li:hover a{
+    color:#f3652a;
+}
+/*---------------------
+  2.1. Mega-menu 
+-----------------------*/
+.mainmenu ul#nav li .mega-menu {
+  background: rgba(0, 0, 0, 0.95) none repeat scroll 0 0;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  top: 115%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 260px;
+  z-index: -99;
+}
+.mainmenu ul#nav li:hover .mega-menu a {
+	color: #fff;
+}
+.mainmenu ul#nav li:hover .mega-menu{
+    margin-top: 0;
+    opacity: 1;
+    top: 100%;
+    z-index: 999999;
+    visibility:visible
+}
+.mainmenu nav ul li .mega-menu span {
+  display: block;
+  margin-bottom: 20px;
+}
+.mainmenu nav ul li .mega-menu span a {
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  padding: 3px 0;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+.mainmenu nav ul li .mega-menu span a:hover {
+    color: #f3652a !important;
+}
+.mainmenu nav ul li .mega-menu span a.mega-menu-title {
+  border-bottom: 1px solid #666;
+  font-weight: 600;
+  padding: 0 0 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.mainmenu nav ul li .mega-menu span a.mega-menu-title:hover {
+  color: #fff !important;
+}
+.badge-hot,a.new-pro,.badge-populer {
+    position:relative;
+}
+.badge-hot::before, .new-pro::before, .badge-populer::before {
+  border-radius: 2px;
+  color: #fff;
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  padding: 4px 5px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.badge-hot:before{
+    background-color: #f3652a;
+    content: "HOT";
+}
+.new-pro:before{
+    background-color: #60932A;
+    content: "NEW";
+}
+.badge-populer:before{
+    background-color: #FCD208;
+    content: "POPULAR";
+}
+.mainmenu ul#nav li .mega-menu span > a.mega-menu-title:hover {
+  padding-left: 0;
+}
+/*---------------------
+  2.2. Stick menu 
+-----------------------*/
+.stick .mainmenu ul#nav > li > a {
+  height: 60px;
+  padding: 19px 15px;
+}
+.header-area.stick {
+  background: rgba(36, 35, 39, 0.95) none repeat scroll 0 0;
+}
+.stick .header-search {
+  height: 60px;
+  line-height: 60px;
+}
+.stick .logo {
+  height: 20px;
+}
+.stick .logo a {
+  padding: 4px;
+}
+.stick span.search-button i,.stick .header-search input{
+    color:#fff;
+}
+.header-search {
+  float: right;
+  height: 80px;
+  line-height: 80px;
+  margin-left: 15px;
+  margin-right: -5px;
+  transition: all 0.2s linear 0s;
+}
+span.search-button{
+    position: absolute;
+}
+.header-search input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  height: auto;
+  line-height: normal;
+  margin: 0;
+  padding: 0 11px;
+  position: relative;
+  transition: all 0.2s linear 0s;
+  width: 23px;
+  z-index: 1;
+}
+span.search-button i {
+  color: #fff;
+  margin-right: 5px;
+}
+.header-search input:focus {
+  cursor: text;
+  padding-left: 20px;
+  width: 150px;
+}
+/*----------------------------------------*/
+/*  2.3. Mobile Menu Area
+/*----------------------------------------*/
+.mobile-menu-area {
+  background: #323333 none repeat scroll 0 0;
+  padding: 10px 0px ;
+}
+.mean-container .mean-bar::after {
+  color: #ffffff;
+  content: "";
+  font-size: 21px;
+  left: 5%;
+  position: absolute;
+  top: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.mean-container a.meanmenu-reveal:hover {
+   color:#f3652a
+}
+.mean-container .mean-nav ul {
+  list-style-type: none;
+  margin: 20px 0px;
+  padding: 0;
+  width: 100%;
+}
+.mean-container .mean-nav ul li a {
+  background: #f8f8f8 none repeat scroll 0 0;
+  color: #444;
+  display: block;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding: 13px 10px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 90%;
+}
+.mean-nav ul li.mean-last {
+  margin-bottom: 20px;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  color: #444;
+  line-height: 17px;
+}
+.mean-container .mean-nav ul li {
+    width: 99.7%;
+}
+.mean-container .mean-nav ul li:hover {
+    background: #fff;
+}
+/*----------------------------------------
+  3.Banner area css
+----------------------------------------*/
+.banner-area {
+  background: #f8f8f8;
+}
+.area-padding {
+  padding: 70px 0;
+}
+.section-headline h3 {
+  color: #444;
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.section-headline h3::before {
+    background: #444 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.section-headline h3::after {
+  background: #f3652a none repeat scroll 0 0;
+  bottom: -1px;
+  content: "";
+  height: 4px;
+  left: 30%;
+  position: absolute;
+  width: 40%;
+  z-index: 222;
+}
+.section-headline p {
+  color: #444;
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.banner-mar {
+  margin-bottom: 30px;
+}
+/*----------------------------------------
+ 4.Team Area Css
+----------------------------------------*/
+.team-member {
+  background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
+  display: block;
+  margin-right: -15px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.team-member::before {
+  background: rgba(0, 0, 0, 0) url("img/team/team01.jpg") repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  margin-right: -15px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: 5s;
+  transform: scale(1);
+}
+.team-member:hover.team-member::before {
+    transform: scale(1.2);
+}
+.single-team-member {
+    float: left;
+    width: 25%;
+}
+.team-left-text h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.team-left-text p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 26px;
+}
+.email-news {
+  display: block;
+  margin: 30px 0;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.email-news .email_button input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  float: left;
+  font-size: 13px;
+  padding: 8px;
+  width: 81%;
+}
+.email-news .email_button > button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  float: left;
+  font-size: 16px;
+  padding: 8px 12px;
+  text-align: center;
+}
+.email-news .email_button > button:hover {
+  background: #f3652a;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.team-left-icon ul li {
+    display: inline-block;
+}
+.team-left-icon ul li a:hover {
+    color: #f3652a;
+    background: #fff;
+    border: 2px solid #fff;
+}
+.team-left-icon ul li a {
+  border:2px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0 3px;
+  width: 40px;
+}
+.team-member-carousel .single-team-member {
+  overflow: hidden;
+  width: 100%;
+}
+.single-team-member:hover .team-img a:after{
+    height: 100%;
+}
+.single-team-member:hover .team-social-icon{
+    top:45%;
+    opacity: 1;
+}
+.team-img {
+    position: relative;
+}
+.team-img > a {
+    display: block;
+}
+.team-img > a::after {
+  background: #444 none repeat scroll 0 0;
+  content: "";
+  height: 0;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+.team-social-icon {
+  left: 50%;
+  margin-left: -72px;
+  opacity:0;
+  position: absolute;
+  top: 0;
+  transition:1.3s;
+}
+.team-social-icon ul li {
+    display: inline-block;
+}
+.team-social-icon ul li a {
+  background: #444 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0 3px;
+  width: 40px;
+}
+.team-social-icon ul li a:hover{
+    color: #f3652a;
+    border: 1px solid #444;
+    background: #fff;
+}
+.team-content {
+    margin-top: 20px;
+}
+.team-content.head-team p {
+  margin-bottom: 0;
+}
+.team-left-icon.text-center {
+  margin-bottom: 20px;
+}
+.head-team h4 {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.head-team h4::before {
+  background: #444 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.head-team h4::after {
+  background: #f3652a none repeat scroll 0 0;
+  bottom: -1px;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 50%;
+}
+.team-indicator.owl-carousel.owl-theme .owl-controls div.owl-nav div {
+  background: #444 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  height: 30px;
+  line-height: 26px;
+  text-align: center;
+  width: 30px;
+  border:1px solic #444;
+}
+.team-indicator.owl-carousel.owl-theme .owl-controls div.owl-nav div.owl-prev {
+  left: -17px;
+  margin-top: -30px;
+  position: absolute;
+  top: 50%;
+}
+.team-indicator.owl-carousel.owl-theme .owl-controls div.owl-nav div.owl-next {
+  right: -17px;
+  margin-top: -30px;
+  position: absolute;
+  top: 50%;
+}
+.team-indicator.owl-carousel.owl-theme:hover .owl-controls div.owl-nav div.owl-next:hover,.team-indicator.owl-carousel.owl-theme:hover .owl-controls div.owl-nav div.owl-prev:hover{
+    background: #fff;
+	color: #f3652a;
+	border:1px solid #f3652a;
+}
+/*----------------------------------------
+ 5.Our services Area Css
+----------------------------------------*/
+.service-area {
+  background: #f6f6f6;
+}
+.service-right {
+    float: left;
+    height: auto;
+    width: 60%;
+}
+.table-content {
+  float: left;
+  padding-left: 5px;
+  width: 40%;
+}
+.left-content {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.service-images {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.service-images > a {
+  display: block;
+}
+.service-images > a img {
+  transform: scale(1);
+  transition: 3s;
+}
+.service-images:hover.service-images > a img{
+    transform: scale(1.1);
+}
+.service-images .overly-text {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  bottom: -50px;
+  height: 0;
+  left: 0;
+  padding: 22px 30px 20px;
+  position: absolute;
+  transition: all 1s ease 0s;
+  width: 100%;
+}
+.service-images:hover .overly-text {
+    height: 35%;
+}
+.overly-text h4 {
+  color: #fff;
+  display: inline;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 38px;
+}
+.overly-text a.btn-service {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 36px 8px 14px;
+  position: relative;
+  float: right;
+}
+.overly-text a.btn-service:hover {
+	color: #f3652a;
+	border: 1px solid #fff;
+    background: #fff;
+}
+.overly-text a.btn-service:hover::after {
+    right: 6px;
+	color: #f3652a;
+}
+.overly-text a.btn-service::after {
+  content: "";
+  font-family: fontawesome;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  transition: 0.4s;
+}
+.table-content table {
+  background: #ffffff none repeat scroll 0 0;
+  border-color: #ccc;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.mar-table {
+  margin-bottom: 40px;
+}
+.table-content table thead tr {
+  background: #444 none repeat scroll 0 0;
+}
+.table-content table th, .table-content table td {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.table-content table th {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 10px !important;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.table-content table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+.table-content table td {
+  border-right: 1px solid #ccc;
+  border-top: medium none;
+  color: #444;
+  font-size: 14px;
+  padding: 14px 10px !important;
+  vertical-align: middle;
+}
+/*----------------------------------------
+ 6.Wellcome Area Css
+----------------------------------------*/
+.wellcome-area {
+background: rgba(248, 248, 248, 0.8) url("img/background/bg1.jpg");
+background-size: cover;
+background-position: center top;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.well-bg {
+position: relative;
+}
+.wellcome-text {
+  background: rgba(248, 248, 248, 0.6) none repeat scroll 0 0;
+  margin: 70px 0;
+  padding: 60px 40px;
+}
+.well-content p {
+  margin-top: 40px;
+  font-size: 18px;
+  font-style: italic;
+}
+.wellcome-text .section-headline p {
+  margin-bottom: 0;
+}
+/*----------------------------------------
+ 7.Portfolio Area Css
+----------------------------------------*/
+.pst-content {
+  padding-left: 10px;
+}
+.project-menu {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.project-menu li {
+    display: inline-block;
+}
+.project-menu li a {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #f3652a;
+  color: #f3652a;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 4px;
+  padding: 8px 17px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.project-menu li a.active,.project-menu li a:hover{
+    border-color: #f3652a;
+    background: #f3652a;
+    color: #fff;
+    text-decoration: none;
+}
+.portfolio-2 .single-awesome-project {
+  float: left;
+  overflow: hidden;
+  width: 33.34%;
+  padding: 15px;
+}
+.portfolio-3 .single-awesome-project {
+  float: left;
+  overflow: hidden;
+  width: 25%;
+}
+.single-awesome-portfolio {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 25%;
+  position: relative;
+}
+.single-awesome-project {
+  float: left;
+  overflow: hidden;
+  width: 33.34%;
+}
+.first-item {
+  margin-bottom: 30px;
+}
+.awesome-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.awesome-img > a {
+  display: block;
+  position: relative;
+}
+.single-awesome-project:hover .awesome-img > a::after{
+	opacity: 1;
+}
+.single-awesome-project:hover .add-actions{
+	opacity: 1;
+    bottom: 0;
+}
+.awesome-img > a::after {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.add-actions {
+  bottom: 100px;
+  display: block;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 10px 15px;
+  position: absolute;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+  background: rgba(0,0,0,0.80);
+}
+.project-dec {
+  display: inline-block;
+  float: left;
+  padding: 15px 0;
+}
+.project-dec h5 {
+  margin-bottom: 5px;
+}
+.project-dec h5 a:hover {
+	color: #f3652a;
+}
+.project-dec h5 a {
+  color: #ddd;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.project-dec span {
+  color: #ddd;
+}
+.project-action-btn {
+  float: right;
+  padding: 19px 0;
+  text-align: center;
+  transition: all 1s ease 0s;
+}
+.project-action-btn li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.project-action-btn li a i:hover {
+	border: 1px solid #f3652a;
+	color: #fff;
+	background: #f3652a;
+}
+.project-action-btn li a i {
+  border: 1px solid #ddd;
+  color: #ddd;
+  font-size: 16px;
+  height: 40px;
+  line-height: 38px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+}
+/*----------------------------------------
+ 8.Testimonial Area Css
+----------------------------------------*/
+.testimonial-area {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.test-overly {
+  background: rgba(229, 240, 251, 0.6) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.testimonial-area {
+  background: rgba(0, 0, 0, 0) url("img/background/bg2.jpg") no-repeat scroll center top / cover ;
+  background-attachment: fixed;
+}
+.testimonial-content {
+  padding: 70px 20px 90px;
+}
+.testi-img img {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 5px;
+  transition: background 0.6s ease-out 0s;
+  width: 80px !important;
+}
+.testi-text p {
+  color: #444;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5em;
+  margin: 20px 0;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot > span {
+  background: #1090E6 none repeat scroll 0 0;
+  border: 2px solid #fff;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+   transform: rotate(136deg);
+  -moz-transform: rotate(136deg);
+  -webkit-transform: rotate(136deg);
+  -o-transform: rotate(136deg);
+  -ms-transform: rotate(136deg);
+   -moz-transition:0.4s;
+  -webkit-transition:0.4s;
+  -o-transition:0.4s;
+  -ms-transition:0.4s;
+    transition:0.4s;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot > span:hover {
+	border-radius: 100%;
+	border: 2px solid #f3652a;
+	background: #fff;
+	transform: rotateX(720deg);
+  -moz-transform: rotateX(720deg);
+  -webkit-transform: rotateX(720deg);
+  -o-transform: rotateX(720deg);
+  -ms-transform: rotateX(720deg);
+   -moz-transition:0.4s;
+  -webkit-transition:0.4s;
+  -o-transition:0.4s;
+  -ms-transition:0.4s;
+    transition:0.4s;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+    bottom: -40px;
+    display: block;
+    left: 50%;
+    margin-left: -45px;
+    position: absolute;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span{
+	border: 2px solid #fff;
+	background: #f3652a;
+}
+.testi-text.text-center > h6 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.guest-rev {
+    color: #444;
+    font-size: 16px;
+}
+.guest-rev > a {
+    color: #f3652a;
+    font-size: 14px;
+}
+/*----------------------------------------*/
+/*  9.blog area CSS
+/*----------------------------------------*/
+.header-blog {
+  background: rgba(0, 0, 0, 0.90);
+}
+.page-head {
+  background: rgba(0, 0, 0, 0) url("img/blog/blog1.jpg") repeat scroll 0 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-head {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.blog-overly {
+  background: rgba(0, 0, 0,0.70) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.blog-title {
+  padding: 160px 0;
+}
+.blog-title h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.blog-title h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.page-head-menu {
+  margin-top: 30px;
+}
+.page-head-menu li {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 10px;
+    position: relative;
+}
+.page-head-menu > li::after {
+  content: "/";
+  position: absolute;
+  right: -5px;
+  top: 0;
+}
+.page-head-menu > li:last-child::after {
+  position: absolute;
+  content: "";
+}
+.page-head-menu li a {
+  color: #fff;
+}
+.blog-post {
+  margin: 70px 0 40px;
+}
+.single-blog {
+  box-shadow: 0 0 6px 0 #bdc3ca;
+  margin-bottom: 5px;
+}
+.blog-info h3.blog-heading a:hover{
+    color: #f3652a;
+}
+.blog-info h3.blog-heading a {
+  color: #444;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.blog-post-dlc ul li {
+  color: #444;
+  display: inline-block;
+  text-align: right;
+  border-right: 1px solid #444;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.blog-post-dlc ul li span.date-time i {
+  margin-right: 7px;
+}
+.blog-post-dlc ul li a i {
+  color: #444;
+  padding-right: 7px;
+}
+
+.blog-post-dlc ul li:last-child {
+    border-right: 0 none;
+}
+.blog-post-dlc ul li:first-child {
+    padding-left: 0;
+}
+.blog-content {
+  padding-top: 10px;
+}
+.blog-info {
+  padding: 10px 15px;
+  overflow: hidden;
+}
+.blog-post-inner.blog-grid-post .single-blog {
+  margin-bottom: 30px;
+}
+.blog-mar {
+  margin-bottom: 30px;
+}
+/*----------------------------------------*/
+/* 10.Apoinment Area CSS
+/*----------------------------------------*/
+.apoin-area {
+  background: url(img/background/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+.apoin-area {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+.appoin-overly {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.70);
+}
+.section-2 h3 {
+  color: #fff;
+}
+.section-2 h3::before {
+  background: #fff none repeat scroll 0 0;
+}
+.app-left .form-group {
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 18px;
+  width: 47%;
+}
+.appfrm label {
+  font-size: 16px;
+  font-weight: 200;
+}
+.form-control {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+}
+.form-group.textarea {
+  width: 96.80%;
+}
+.appfrm .mt-right0 {
+  margin-right: 0;
+}
+.pull-left {
+  float: left !important;
+}
+.dateinput {
+  float: left;
+  margin-right: 18px;
+  width: 53%;
+}
+.time {
+  float: left;
+  width: 41.1%;
+}
+.appfrmright .form-group {
+  float: right;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+label {
+  color: #fff;
+}
+.submitbtn {
+  float: left;
+  margin-top: 15px;
+  text-align: center;
+  width: 96.80%;
+}
+.submitbtn .btn.btn-default {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  padding: 12px 30px;
+  width: 100%;
+}
+.submitbtn .btn.btn-default:hover {
+	background:#fff;
+	border: 1px solid #444;
+	color:#f3652a;
+}
+.time select {
+  -moz-appearance: none;
+  background-color: transparent;
+  background-position: 92% center;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+  display: block;
+  font-size: 16px;
+  height: 42px;
+  line-height: 24px;
+  padding: 9px 7px;
+  width: 100%;
+  position: relative;
+  color:#ddd;
+}
+.time select option {
+  color: #444;
+}
+.contact-info {
+  background: #fff;
+  padding: 10px;
+}
+.map-column {
+  margin-left: -15px;
+}
+.map-zone {
+  margin-top: 25px;
+}
+.contact-icons h3:before{
+	content: "\f007";
+	display: inline-block;
+	font-family: FontAwesome;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.contact-icons ul li {
+  float: left;
+  font-size: 14px;
+  line-height: 40px;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.contact-icons ul li i {
+  font-size: 13px;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #777;
+  text-align: center;
+  line-height: 23px;
+  color: #777;
+}
+.contact-icons {
+  overflow: hidden;
+}
+.contact-icons ul li a:hover {text-decoration: underline;}
+.contact-icons ul li a {
+  color: #f3652a;
+}
+.form-control:focus {
+  border-color: #f3652a;
+  outline: 0 none;
+}
+/*----------------------------------------*/
+/*  11.Fotter  CSS
+/*----------------------------------------*/
+.footer-area {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    padding: 15px 0 1px;
+}
+.copyright p {
+    color: #fff;
+    font-size: 12px;
+}
+.copyright a {
+  color: #f3652a;
+}
+/*----------------------------------------*/
+/*  12.Home Page 2  CSS
+/*----------------------------------------*/
+.banner-area.banner-area-2 {
+  background: transparent;
+}
+.banner-item-2 {
+    float: left;
+    width: 50%;
+}
+.add-area {
+    display: block;
+}
+.single-add-itms {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 33.33%;
+}
+.single-add-itms a {
+    display: block;
+	position: relative;
+	width: 100%;
+}
+.single-add-itms a::before{
+  border: 0 solid rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  box-sizing: border-box;
+  content: "";
+  left: 0;
+  opacity: 0;
+  overflow: visible;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 9;
+}
+.single-add-itms a:hover::before{
+   border: 15px solid rgba(255, 255, 255, 0.5);
+   box-sizing: border-box;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+/*----------------------------------------*/
+/*  13.	Blog Details css
+/*----------------------------------------*/
+.blog-post-wrapper {
+  margin-top: 70px;
+}
+.post-information h4 {
+  color: #444;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.post-information {
+    padding: 20px 0;
+}
+.post-information .entry-meta span a {
+    color: #444;
+    display: inline-block;
+    padding: 10px 0;
+}
+.entry-meta span a:hover {
+  color: #f3652a;
+}
+.post-information .entry-meta {
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+.post-information .entry-meta span i {
+    padding: 0 10px;
+}
+.entry-content > p {
+    color: #444;
+}
+.entry-meta > span {
+  color: #444;
+}
+.entry-content blockquote {
+  background: #fff none repeat scroll 0 0;
+  border-left: 5px solid #f3652a;
+  font-size: 17.5px;
+  font-style: italic;
+  margin: 0 0 20px 40px;
+  padding: 22px 20px;
+}
+.pagination > li > a, .pagination > li > span {
+  background-color: #fff;
+  border: 1px solid #444;
+  color: #444
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #f3652a;
+  border-color: #f3652a;
+  color: #fff;
+  cursor: default;
+  z-index: 3;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  background-color: #f3652a;
+  border-color: #f3652a;
+  color: #fff;
+  z-index: 2;
+}
+.social-sharing {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 30px 0;
+}
+.social-sharing > h3 {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px 10px;
+}
+.sharing-icon {
+    display: inline-block;
+    float: right;
+    padding: 13px 10px;
+}
+.sharing-icon a {
+    border: 1px solid #444;
+    color: #444;
+    display: block;
+    float: left;
+    font-size: 18px;
+    height: 34px;
+    line-height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    width: 34px;
+}
+.sharing-icon a:hover {
+	color: #f3652a;
+	border: 1px solid #f3652a;
+}
+.single-blog .author-avatar {
+  float: left;
+  margin-right: 10px;
+}
+.single-blog .author-description h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0 0 5px;
+}
+.author-info {
+  background: #fff none repeat scroll 0 0;
+  float: left;
+  margin: 30px 0;
+  padding: 15px;
+  width: 100%;
+}
+.single-post-comments {
+  margin-bottom: 20px;
+  max-width: 650px;
+}
+.comments-heading h3, h3.comment-reply-title {
+  border-bottom: 1px solid #e8e8e9;
+  color: #444;
+  font-size: 18px;
+  margin: 0 0 20px;
+  padding: 0 0 5px;
+  text-transform: uppercase;
+}
+.comments-list ul li{margin-bottom: 25px;}
+.comments-list-img{float: left;
+margin-right: 15px;}
+.comments-content-wrap {
+  border: 1px solid #ccc;
+  color: #444;
+  font-size: 12px;
+  line-height: 1;
+  margin: 0 0 15px 80px;
+  padding: 10px;
+  position: relative;
+}
+.comments-content-wrap::before {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  content: "";
+  display: block;
+  height: 10px;
+  left: -5px;
+  position: absolute;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 10px;
+}
+.author-avatar {
+  display: inline-block;
+  float: left;
+  width: 10%;
+}
+.author-description h2 {
+    color: #777;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.author-description h2 a {
+    color: #444;
+}
+.comments-content-wrap span b{margin-right:5px}
+.comments-content-wrap span a:hover{}
+span.post-time{margin-right:5px}
+.comments-content-wrap p {
+  color: #909295;
+  line-height: 18px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+li.threaded-comments{margin-left:50px}
+.comment-respond {
+  margin-top: 60px;
+}
+h3.comment-reply-title{}
+span.email-notes{color: #444;
+display: block;
+font-size: 12px;
+margin-bottom: 10px;}
+.comment-respond p {
+  color: #444;
+  margin-bottom: 5px;
+}
+.comment-respond input[type=text],.comment-respond input[type=email]{
+border: 1px solid #e5e5e5;
+border-radius: 0;
+height: 32px;
+margin-bottom: 15px;
+padding: 0 0 0 10px;
+width: 100%;}
+.comment-respond textarea#message-box{
+border: 1px solid #e5e5e5;
+border-radius: 0;
+max-width: 100%;
+padding: 10px;height: 130px;
+width: 100%;
+}
+.comment-respond input[type="submit"] {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #444;
+  border-radius: 0;
+  box-shadow: none;
+  color: #444;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 14px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  text-shadow: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+}
+.blog-pagination {
+  margin-bottom: 40px;
+}
+.comments-content-wrap span a {
+    color: #444;
+}
+.comments-content-wrap span a:hover {color: #f3652a;}
+
+.comment-respond input[type=submit]:hover{
+    border:1px solid #f3652a;
+    color: #fff;
+    background: #f3652a;
+}
+.single-blog .blog-pagination {
+	border-top: 1px solid #e5e5e5;
+	margin:0;
+	padding-top:30px;
+}
+.blog-post.single-blog-post {
+  margin-bottom: 0;
+}
+/*----------------------------------------
+  14.Single Blog CSS
+----------------------------------------*/
+.blog-carousel .col-lg-4.col-md-4.col-sm-6{
+	width: 100%;
+}
+.widget-categories {
+  overflow: hidden;
+}
+.left-sidebar.right-sidebar {
+  margin-top: 0;
+}
+.widget-product a img {
+  display: inline-block;
+  float: left;
+  width: 30%;
+}
+.left-sidebar {
+  margin-top: 70px;
+}
+.left-sidebar-title > h4 {
+  background: #444 none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.widget-product {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0px;
+}
+.widget-product .product-info {
+  display: inline-block;
+  float: right;
+  padding-left: 10px;
+  width: 70%;
+}
+.widget-product .product-info h5 {
+  font-size: 16px;
+}
+.widget-product .product-info h5 a {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+}
+.widget-product .product-info h5 a:hover {
+  color: #f3652a;
+}
+.sidebar-title {
+  border-bottom: 1px solid #ccc;
+  color: #444;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 20px 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+.tag-list ul li {
+  display: inline-block;
+  margin: 0 2px 15px 0;
+}
+.bottom-tag .sidebar-title {
+  margin-bottom: 20px;
+  padding: 0px 0 20px;
+}
+.popular-tag .tag-list ul li a,.tag-action ul li > a {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #444;
+  display: inline-block;
+  font-size: 14px !important;
+  line-height: 24px;
+  padding: 6px 15px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+.popular-tag .tag-list ul li a:hover,.tag-action ul li > a:hover{
+	color: #fff;
+	background: #f3652a;
+	border: 1px solid #f3652a;
+	transition: 0.3s;
+}
+.layout-title.bottom-tag {
+  margin-top: 20px;
+}
+.tag-action {
+  display: block;
+  padding-top: 15px;
+}
+.tag-action ul li > a {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #444;
+  padding: 5px;
+  text-transform: capitalize;
+}
+.layout-title.bottom-tag h4 {
+  margin-bottom: 30px;
+}
+.bloging-btn {
+  display: inline-block;
+  color: #444;
+  border: 1px solid #444;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  transition: 0.4s;
+}
+.bloging-btn:hover {
+    background: #f3652a;
+    color: #fff;
+	border: 1px solid #f3652a;
+}
+.single-lefts {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+/*----------------------------------------
+  15.Services page CSS
+----------------------------------------*/
+.service-heading {
+  background: rgba(0, 0, 0, 0) url("img/service/bg1.jpg") repeat scroll 0 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.service-heading {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 70px 0px;
+}
+.gallary-area {
+  display: block;
+}
+.gallary-details .single-awesome-portfolio{
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.school-pic {
+  text-align: center;
+}
+/*----------------------------------------
+ .End CSS
+----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

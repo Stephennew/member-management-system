@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分商城</title>
+    <style>
+        .education-agile-w3l{
+            border:1px green solid;
+            border-collapse: collapse;
+            width: 35%;
+            float: left;
+        }
+        .education-agile-w3l-year{
+            float: left;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .education-agile-w3l-info{
+            float: right;
+        }
+        .blue {
+            color: #d9eef7;
+            border: solid 1px #0076a3;
+            background: #0095cd;
+            background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));}
+        .button {
+            display: inline-block;
+            zoom: 1;
+            vertical-align: baseline;
+            margin: 0 2px;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.3);
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        }
+        .button>a{
+            text-decoration: none;
+            color: white;
+        }
+        .button1 {
+            display: inline-block;
+            zoom: 1;
+            vertical-align: baseline;
+            margin: 0 2px;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.3);
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        }
+        .orange {
+            color: #fef4e9;
+            border: solid 1px #da7c0c;
+            background: #f78d1d;
+            background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+        }
+        .button1>a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: #1c84c6;margin-left: 400px">积分商城</h1>
+<span class="button blue"><a href="index.php?p=home&c=index&a=index">返回</a></span>
+<span class="button1 orange"><a href="index.php?p=home&c=OrderForm&a=getmeorder&member_id=<?=$_SESSION['user']['member_id']??0?>">我的订单</a></span>
+<?foreach($rows as $goods):?>
+<div class="education-agile-w3l">
+    <div class="education-agile-w3l-year">
+        <img src="<?=$goods['photo']?>" alt="" width="150px">
+    </div>
+    <div class="education-agile-w3l-info">
+        <h4 style="color: green">商品:<b><?=$goods['name']?></b></h4>
+        <p>描述:<?=$goods['des']?></p>
+        <ul style="list-style: none">
+            <li style="color: green"><b>所需积分:</b><?=$goods['price']?></li>
+            <li style="color: green"><b>库存:</b><?=$goods['inventory']?></li>
+        </ul>
+
+        <form action="index.php?p=home&c=orderform&a=addorderform" method="post">
+
+            <input type="hidden" name="goods_id" value="<?=$goods['goods_id']?>">
+            兑换数量:<input type="number" name="goods_num" value="1" class="col-md-3 col-sm-12 col-xs-12 form-group">
+            <input type="submit" value="点击兑换" class="btn btn-round btn-success">
+
+        </form>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<?endforeach;?>
+</body>
+</html>

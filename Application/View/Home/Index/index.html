@@ -1,0 +1,1126 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Home</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- google fonts here -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,600,700' rel='stylesheet' type='text/css'>
+
+<!-- all css here -->
+
+<!-- bootstrap v3.3.6 css -->
+<link rel="stylesheet" href="./Public/Home/css/bootstrap.min.css">
+<!-- nivo-slider css -->
+<link rel="stylesheet" href="./Public/Home/lib/css/nivo-slider.css" />
+<link rel="stylesheet" href="./Public/Home/lib/css/preview.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./Public/Home/lib/css/style.css" type="text/css" media="screen" />
+<!-- meanmenu css -->
+<link rel="stylesheet" href="./Public/Home/css/meanmenu.min.css">
+<!-- animate css -->
+<link rel="stylesheet" href="./Public/Home/css/animate.css">
+<!-- owl.carousel css -->
+<link rel="stylesheet" href="./Public/Home/css/owl.carousel.css">
+<link rel="stylesheet" href="./Public/Home/css/owl.transitions.css">
+<!-- font-awesome css -->
+<link rel="stylesheet" href="./Public/Home/css/font-awesome.min.css">
+<!-- venobox css -->
+<link rel="stylesheet" href="./Public/Home/css/venobox.css">
+<!-- style css -->
+<link rel="stylesheet" href="./Public/Home/style.css">
+<!-- responsive css -->
+<link rel="stylesheet" href="./Public/Home/css/responsive.css">
+
+<!-- modernizr css -->
+<script src="./Public/Home/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+ 
+
+
+<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="preloader"></div>
+<header>
+	<!-- header-area start -->
+	<div id="sticker" class="header-area hidden-xs">
+		<div class="container">
+			<div class="row">
+				<!-- logo start -->
+				<div class="col-md-2 col-lg-2 col-sm-3 col-xs-12">
+					<div class="logo">
+						<a href="index.html"><img src="./Public/Home/img/logo/logo.png" alt="" /></a>
+					</div>
+				</div>
+				<!-- logo end -->
+				<!-- mainmenu start -->
+				<div class="col-md-10 col-lg-10 col-sm-9 hidden-xs">
+					<div class="header-search hidden-sm">
+						<form action="#">
+							<span class="search-button"><i class="fa fa-search"></i></span>
+							<input type="text" placeholder="search...">
+						</form>						
+					</div>
+					<div class="mainmenu">
+						<nav>
+							<ul id="nav">
+								<li><a href="index.php?p=home&c=Artivity&a=index">活动</a></li>
+								<li><a href="index.php?p=home&c=Leaderboard&a=get">排行榜</a></li>
+								<li><a href="index.php?p=home&c=order&a=index">预约</a></li>
+								<li><a href="index.php?p=home&c=goods&a=index">积分商城</a></li>
+								<li><a href="index.php?p=Home&c=login&a=index"><?=isset($_SESSION['user']['user_name'])?$_SESSION['user']['user_name'].':会员':'登录'?></a></li>
+								<li><?=isset($_SESSION['user']['user_name'])?'<a href="index.php?p=Home&c=Login&a=logout">退出':'<a href="index.php?p=Home&c=register&a=index">注册'?> </a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- mainmenu end -->
+			</div>
+		</div>
+	</div>
+	<!-- header-area end -->
+	<!-- mobile-menu-area start -->
+	<div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mobile-menu">
+						<div class="logo">
+							<a href="index.html"><img src="./Public/Home/img/logo/logo.png" alt="" /></a>
+						</div>
+						<nav id="dropdown">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a href="blog-grid.html">Blog Grid</a></li>
+								<li><a href="blog-details.html">Blog Detailst</a></li>
+								<li><a href="blog-single-post.html">Blog single</a></li>
+							</ul>
+						</nav>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- mobile-menu-area end -->		
+</header>
+<!-- header end -->
+<!-- Start Slider Area -->
+<div class="slider-area">
+	<div class="bend niceties preview-2">
+		<div id="ensign-nivoslider" class="slides">	
+			<img src="./Public/Home/img/slider/slider1.jpg" alt="" title="#slider-direction-1"  />
+			<img src="./Public/Home/img/slider/slider2.jpg" alt="" title="#slider-direction-2"  />
+		</div>
+		<!-- direction 1 -->
+		<div id="slider-direction-1" class="slider-direction slider-one">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+						<div class="slider-content hidden-xs">
+							<!-- layer 1 -->
+							<div class="layer-1-1 wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s ">
+								<h2 class="title1">The Hair Fashion</h2>
+							</div>
+							<!-- layer 2 -->
+							<div class="layer-1-2 wow slideInLeft" data-wow-duration="1s" data-wow-delay=".4s ">
+								<h1 class="title2">Lets Go Hair Styless</h1>
+							</div>
+							<!-- layer 3 -->
+							<div class="layer-1-3 wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s ">
+								<a href="#" class="ready-btn" >Contact Here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- direction 2 -->
+		<div id="slider-direction-2" class="slider-direction slider-two">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+						<div class="slider-content hidden-xs">
+							<!-- layer 1 -->
+							<div class="layer-1-1 wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s ">
+								<h2 class="title1">The Hair Fashion</h2>
+							</div>
+							<!-- layer 2 -->
+							<div class="layer-1-2 wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s  ">
+								<h1 class="title2">Lets Go Hair Styless</h1>
+							</div>
+							<!-- layer 3 -->
+							<div class="layer-1-3 wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s ">
+								<a href="#" class="ready-btn" >Contact Here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Slider Area -->
+<!-- Start banner Area -->
+<div class="banner-area area-padding fix">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="section-headline text-center">
+				<h3>Styles salon</h3>
+				<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="banner-item">
+					<div class="single-banner wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+						<a href="#">
+							<img src="./Public/Home/img/banner/banner002.jpg" alt="banners">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="banner-item">
+					<div class="single-banner banner-mar wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
+						<a href="#">
+							<img src="./Public/Home/img/banner/banner2.jpg" alt="banners">
+						</a>
+					</div>
+					<div class="single-banner wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
+						<a href="#">
+							<img src="./Public/Home/img/banner/banner3.jpg" alt="banners">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End banner Area -->
+<!-- Start team Area -->
+<div class="our-team-area area-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="section-headline text-center">
+				<h3>Our special Team</h3>
+				<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-4 wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+				<div class="team-member">
+					<div class="team-side-text">
+						<div class="team-left-text">
+							<h4>meet our expert team</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem.</p>
+						</div>
+						<div class="email-news">
+							<form action="#">
+								<div class="email_button">
+								   <input type="text" placeholder="Email">
+								   <button type="submit"><i class="fa fa-envelope"></i></button>
+								</div>
+							</form>
+						</div>
+						<div class="team-left-icon text-center">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-8 team-left wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+				<div class="team-member-carousel team-indicator">
+				   <!-- Start single-team member -->
+					<div class="single-team-member">
+						<div class="team-img">
+							<a href="#">
+								<img src="./Public/Home/img/team/team1.jpg" alt="">
+							</a>
+							<div class="team-social-icon text-center">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content head-team">
+							<h4>Jhon</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus </p>
+						</div>
+					</div>
+					<!-- End single-team member -->
+					<!-- Start single-team member -->
+					<div class="single-team-member">
+						<div class="team-img">
+							<a href="#">
+								<img src="./Public/Home/img/team/team2.jpg" alt="">
+							</a>
+							<div class="team-social-icon text-center">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content head-team">
+							<h4>Marey</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus </p>
+						</div>
+					</div>
+					<!-- End single-team member -->
+					<!-- Start single-team member -->
+					<div class="single-team-member">
+						<div class="team-img">
+							<a href="#">
+								<img src="./Public/Home/img/team/team3.jpg" alt="">
+							</a>
+							<div class="team-social-icon text-center">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content head-team">
+							<h4>Lopeez</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus </p>
+						</div>
+					</div>
+					<!-- End single-team member -->
+					<!-- Start single-team member -->
+					<div class="single-team-member">
+						<div class="team-img">
+							<a href="#">
+								<img src="./Public/Home/img/team/team4.jpg" alt="">
+							</a>
+							<div class="team-social-icon text-center">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content head-team">
+							<h4>Jenne</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus </p>
+						</div>
+					</div>
+					<!-- End single-team member -->
+					<!-- Start single-team member -->
+					<div class="single-team-member">
+						<div class="team-img">
+							<a href="#">
+								<img src="./Public/Home/img/team/team5.jpg" alt="">
+							</a>
+							<div class="team-social-icon text-center">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content head-team">
+							<h4>Andew Loies</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus </p>
+						</div>
+					</div>
+					<!-- End single-team member -->
+					<!-- Start single-team member -->
+					<div class="single-team-member">
+						<div class="team-img">
+							<a href="#">
+								<img src="./Public/Home/img/team/team6.jpg" alt="">
+							</a>
+							<div class="team-social-icon text-center">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content head-team">
+							<h4>Annei</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus </p>
+						</div>
+					</div>
+					<!-- End single-team member -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End our team Area -->
+<!-- Start Service Area -->
+<div class="service-area area-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="section-headline text-center">
+				<h3>Our Services</h3>
+				<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row mar-table mob-res">
+			<div class="col-lg-12 wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+				<div class="service-right">
+					<div class="cut-content head-team">
+						<h4>Cutting</h4>
+					</div>
+					<div class="service-images">
+						<a href="#"><img src="./Public/Home/img/service/service1.jpg" alt=""></a>
+						<div class="overly-text">
+							<h4>follow our services</h4>
+							<a class="btn-service " href="#">Read more</a>
+						</div>
+					</div>
+				</div> 
+				<form action="#">
+					<div class="table-content table-responsive">
+						<table class=" table table-striped">
+							<thead>
+								<tr>
+									<th>Cut</th>
+									<th>Womens</th>
+									<th>Mens</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Styles</td>
+									<td>$100</td>
+									<td>$90</td>
+								</tr>
+								<tr>
+									<td>Master Stylist</td>
+									<td>$110</td>
+									<td>$100</td>
+								</tr>
+									<tr>
+									<td>Celebrity Stylist</td>
+									<td>$160</td>
+									<td>$150</td>
+								</tr>
+								<tr>
+									<td>Baby Cut</td>
+									<td>$70</td>
+									<td>$60</td>
+								</tr>
+								<tr>
+									<td>Comon Stylist</td>
+									<td>$50</td>
+									<td>$50</td>
+								</tr>
+								<tr>
+									<td>General</td>
+									<td>$80</td>
+									<td>$60</td>
+								</tr>
+								<tr>
+									<td>Mini Cut</td>
+									<td>$40</td>
+									<td>$40</td>
+								</tr>
+								<tr>
+									<td>Cut</td>
+									<td>$50</td>
+									<td>$50</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+				<!-- end table -->
+			</div>
+		</div>
+		<!-- end row -->
+		<div class="row mar-table hidden-xs">
+			<div class="col-lg-12 wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s"> 
+				<form action="#">
+					<div class="table-content left-content table-responsive">
+						<table class=" table table-striped">
+							<thead>
+								<tr>
+									<th>facial</th>
+									<th>Womens</th>
+									<th>Mens</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Standerd</td>
+									<td>$100</td>
+									<td>$90</td>
+								</tr>
+								<tr>
+									<td>Special</td>
+									<td>$110</td>
+									<td>$100</td>
+								</tr>
+									<tr>
+									<td>Celebrity face</td>
+									<td>$160</td>
+									<td>$150</td>
+								</tr>
+								<tr>
+									<td>Mackup</td>
+									<td>$70</td>
+									<td>$60</td>
+								</tr>
+								<tr>
+									<td>Regular</td>
+									<td>$50</td>
+									<td>$50</td>
+								</tr>
+								<tr>
+									<td>General</td>
+									<td>$80</td>
+									<td>$60</td>
+								</tr>
+								<tr>
+									<td>Body spa</td>
+									<td>$240</td>
+									<td>$240</td>
+								</tr>
+								<tr>
+									<td>Styles</td>
+									<td>$50</td>
+									<td>$50</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+				<!-- end table -->
+				<div class="service-right">
+				   <div class="cut-content head-team">
+						<h4>Special facial</h4>
+					</div>
+					<div class="service-images">
+						<a href="#"><img src="./Public/Home/img/service/service2.jpg" alt=""></a>
+						<div class="overly-text">
+							<h4>follow our services</h4>
+							<a class="btn-service " href="#">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end row -->
+		<div class="row">
+			<div class="col-lg-12 wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+				<div class="service-right">
+					<div class="cut-content head-team">
+						<h4>Other Services</h4>
+					</div>
+					<div class="service-images">
+						<a href="#"><img src="./Public/Home/img/service/service3.jpg" alt=""></a>
+						<div class="overly-text">
+							<h4>follow our services</h4>
+							<a class="btn-service " href="#">Read more</a>
+						</div>
+					</div>
+				</div> 
+				<form action="#">
+					<div class="table-content table-responsive">
+						<table class=" table table-striped">
+							<thead>
+								<tr>
+									<th>Services</th>
+									<th>Womens</th>
+									<th>Mens</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Colors</td>
+									<td>$100</td>
+									<td>$90</td>
+								</tr>
+								<tr>
+									<td>Red Colors</td>
+									<td>$110</td>
+									<td>$100</td>
+								</tr>
+									<tr>
+									<td>Celebrity</td>
+									<td>$160</td>
+									<td>$150</td>
+								</tr>
+								<tr>
+									<td>Body Masege</td>
+									<td>$70</td>
+									<td>$60</td>
+								</tr>
+								<tr>
+									<td>Comon Color</td>
+									<td>$50</td>
+									<td>$50</td>
+								</tr>
+								<tr>
+									<td>General</td>
+									<td>$80</td>
+									<td>$60</td>
+								</tr>
+								<tr>
+									<td>Black Hair</td>
+									<td>$40</td>
+									<td>$40</td>
+								</tr>
+								<tr>
+									<td>Broun Clors</td>
+									<td>$50</td>
+									<td>$50</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+				<!-- end table -->
+			</div>
+		</div>
+		<!-- end row -->
+	</div>
+</div>
+<!-- End Service Area -->
+<!-- Start Wellcome Area -->
+<div class="wellcome-area">
+	<div class="well-bg">
+		<div class="test-overly"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="wellcome-text">
+						<div class="section-headline text-center">
+							<h3>Welcome to our Styles</h3>
+							<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Wellcome Area -->
+<!-- Start portfolio Area -->
+<div class="portfolio-area area-padding fix">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="section-headline text-center">
+					<h3>Our Portfolio</h3>
+					<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Start Portfolio -page -->
+			<div class="awesome-project-1 fix">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="awesome-menu ">
+						<ul class="project-menu">
+							<li><a href="#" class="active" data-filter="*" >All</a></li>
+							<li><a href="#" data-filter=".hair">hair</a></li>
+							<li><a href="#" data-filter=".faceial">faceial</a></li>
+							<li><a href="#" data-filter=".makeup">makeup</a></li>
+						</ul>				
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="awesome-project-content">
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project hair faceial">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port1.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Hair styles</a></h5>
+									<span>Modeling</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port1.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project makeup">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port2.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Fashion</a></h5>
+									<span>Hero cut</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port2.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project faceial">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port3.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Makeup</a></h5>
+									<span>Celebrity</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port3.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project makeup hair">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port4.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Styles Salon</a></h5>
+									<span>Styles cutting</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port4.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project faceial">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port5.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Spa Room</a></h5>
+									<span>Easily</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port5.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project makeup">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port6.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Nice Salon</a></h5>
+									<span>Makeup</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port6.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project faceial">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port7.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Facewash</a></h5>
+									<span>Cleaning</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port7.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project hair">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port8.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Beautyful</a></h5>
+									<span>Haircut</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port8.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+					<!-- single-awesome-project start -->
+					<div class="single-awesome-project hair">
+						<div class="awesome-img">
+							<a href="#"><img src="./Public/Home/img/portfolio/port9.jpg" alt="" /></a>
+							<div class="add-actions">
+								<div class="project-dec">
+									<h5><a href="#">Beautyful</a></h5>
+									<span>Haircut</span>
+								</div>
+								<ul class="project-action-btn">
+									<li><a class="venobox" data-gall="myGallery" href="./Public/Home/img/portfolio/port9.jpg"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- single-awesome-project end -->
+				</div>		
+			</div>		
+		</div>	
+	</div>	
+</div>
+<!-- awesome-portfolio end -->
+<!-- Start testimonials end -->
+<div class="testimonial-area">
+	<div class="well-bg">
+		<div class="test-overly"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+					<div class="testimonial-content">
+						<!-- start testimonial carousel -->
+						<div class="testimonial-carousel">
+							<div class="single-testi text-center">
+								<div class="testi-img">
+									<img src="./Public/Home/img/testimonial/test1.jpg" alt="">
+								</div>
+								<div class="testi-text text-center">
+									<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+									<h6>marlin</h6>
+									<span class="guest-rev">Color Specialest - <a href="#">Styles Salon</a></span>
+								</div>
+							</div>
+							<!-- End single item -->
+							<div class="single-testi text-center">
+								<div class="testi-img">
+									<img src="./Public/Home/img/testimonial/test2.jpg" alt="">
+								</div>
+								<div class="testi-text text-center">
+									<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+									<h6>Annie</h6>
+									<span class="guest-rev">Face Specialest - <a href="#">Styles Salon</a></span>
+								</div>
+							</div>
+							<!-- End single item -->
+							<div class="single-testi text-center">
+								<div class="testi-img">
+									<img src="./Public/Home/img/testimonial/test3.jpg" alt="">
+								</div>
+								<div class="testi-text text-center">
+									<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+									<h6>Janifer</h6>
+									<span class="guest-rev">Hair Specialest -<a href="#">Styles Salon</a></span>
+								</div>
+							</div>
+							<!-- End single item -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End testimonials end -->
+<!-- Start Blog Area -->
+ <div class="our-blog-area area-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="section-headline text-center">
+				<h3>Our Latest News</h3>
+				<p>Salon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="blog-post-inner blog-carousel team-indicator">
+				<!-- Start Single Blog -->
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="single-blog text-left ">
+						<div class="blog-thumb">
+							<img alt="blog img" src="./Public/Home/img/blog/blog5.jpg">
+						</div>
+						<div class="blog-info">
+							<h3 class="blog-heading"><a href="#">Title Post Here</a></h3>
+							<div class="blog-post-dlc">
+								<ul>
+									<li>
+										<span class="date-time"><i class="fa fa-calendar"></i>feb 18, 2016</span>
+									</li>
+									<li><a href="#"><i class="fa fa-heart"></i></a>17</li>
+									<li><a href="#"><i class="fa fa-comments-o"></i></a>2</li>
+								</ul>
+							</div>
+							<p class="blog-content">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Blog -->
+				<!-- Start Single Blog -->
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="single-blog text-left ">
+						<div class="blog-thumb">
+							<img alt="blog img" src="./Public/Home/img/blog/blog2.jpg">
+						</div>
+						<div class="blog-info">
+							<h3 class="blog-heading"><a href="#">Title Post Here</a></h3>
+							<div class="blog-post-dlc">
+								<ul>
+									<li>
+										<span class="date-time"><i class="fa fa-calendar"></i>feb 18, 2016</span>
+									</li>
+									<li><a href="#"><i class="fa fa-heart"></i></a>17</li>
+									<li><a href="#"><i class="fa fa-comments-o"></i></a>2</li>
+								</ul>
+							</div>
+							<p class="blog-content">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Blog -->
+				<!-- Start Single Blog -->
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="single-blog text-left ">
+						<div class="blog-thumb">
+							<img alt="blog img" src="./Public/Home/img/blog/blog3.jpg">
+						</div>
+						<div class="blog-info">
+							<h3 class="blog-heading"><a href="#">Title Post Here</a></h3>
+							<div class="blog-post-dlc">
+								<ul>
+									<li>
+										<span class="date-time"><i class="fa fa-calendar"></i>feb 18, 2016</span>
+									</li>
+									<li><a href="#"><i class="fa fa-heart"></i></a>17</li>
+									<li><a href="#"><i class="fa fa-comments-o"></i></a>2</li>
+								</ul>
+							</div>
+							<p class="blog-content">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Blog -->
+				<!-- Start Single Blog -->
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="single-blog text-left ">
+						<div class="blog-thumb">
+							<img alt="blog img" src="./Public/Home/img/blog/blog4.jpg">
+						</div>
+						<div class="blog-info">
+							<h3 class="blog-heading"><a href="#">Title Post Here</a></h3>
+							<div class="blog-post-dlc">
+								<ul>
+									<li>
+										<span class="date-time"><i class="fa fa-calendar"></i>feb 18, 2016</span>
+									</li>
+									<li><a href="#"><i class="fa fa-heart"></i></a>17</li>
+									<li><a href="#"><i class="fa fa-comments-o"></i></a>2</li>
+								</ul>
+							</div>
+							<p class="blog-content">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Blog -->
+			</div>
+		</div>
+	</div>
+</div>
+<!--End Blog Post Area -->
+<!-- star Appointment Area -->
+<div class="apoin-area">
+	<div class="well-bg area-padding">
+		<div class="appoin-overly"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="section-headline text-center section-2">
+						<h3>Appoinment here</h3>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="apoint-form">
+					<form name="app-form" id="app-ready" method="post">
+						<div class="col-sm-12 col-md-8 col-lg-7 app-left">
+							<div class="form-group">
+								  <label>Name</label>
+								  <input type="text" name="app-name" id="app-name"  class="form-control required" placeholder="name">
+							</div>
+							<div class="form-group mt-right0">
+								  <label>Email</label>
+								  <input type="email" class="form-control required email" name="app-email" id="app-email" placeholder="Email">
+							</div>
+							<div class="form-group pull-left">
+								  <label>Contact Number</label>
+								  <input type="text" name="app-num" id="app-num" class="form-control required number" placeholder="Number">
+							</div>
+							<div class="form-group mt-right0">
+								<div class="input-append dateinput">
+									<label class="control-label">Date</label>
+									<div class="real-date"><input type="text" class="form-control required" name="AppointmentDate" id="datePicker" placeholder="Date" /></div>
+								</div>
+								<div class="time">
+									<label>Time</label>
+									<select name="AppointmentTime" id="AppointmentTime">
+									  <option selected>Select</option>
+									  <option>10:00am</option>
+									  <option>10:30am</option>
+									  <option>11:00am</option>
+									  <option>12:00pm</option>
+									  <option>01:30pm</option>
+									  <option>02:00pm</option>
+									  <option>03:00pm</option>
+									  <option>04:30pm</option>
+									  <option>05:00pm</option>
+									  <option>06:00pm</option>
+									  <option>09:00pm</option>
+									  <option>10:00pm</option>
+									</select>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="form-group textarea">
+							  <label class="control-label">Description</label>
+							  <textarea class="form-control" name="AppointmentMessage" rows="5" id="AppointmentMessage"></textarea>
+							</div>
+							<div class="submitbtn">
+								<button type="submit" class="btn btn-default" value="Submit" >SUBMIT</button>
+							</div>	
+						</div> 
+					</form>
+				</div>
+				<div class="map-column col-lg-5 col-md-4 col-sm-12 col-xs-12">
+					<div class="map-zone">
+						<div class="contact-info">
+							<div class="contact-icons">
+								<ul>
+									<li>
+										<i class="fa fa-map-marker"></i> <strong>Address:</strong>
+										 121 lone street,New York.
+									</li>
+									<li>
+										<i class="fa fa-mobile"></i> <strong>Phone:</strong>
+										+884-7444654
+									</li>
+									<li>
+										<i class="fa fa-envelope"></i> <strong>Email:</strong>
+										<a href="#">admin@Styleshair.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Map area -->
+						<div class="map-area">
+							<div id="googleMap" style="width:100%;height:275px;"></div>
+						</div><!-- End Map area -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Appointment Area -->
+<!-- Start Footer bottom Area -->
+<div class="footer-area">
+   <div class="container">
+	   <div class="row">
+		  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			  <div class="copyright text-center">
+				<p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			  </div>
+		   </div>
+	   </div>
+   </div>
+</div>
+
+<!-- all js here -->
+
+<!-- jquery latest version -->
+<script src="./Public/Home/js/vendor/jquery-1.12.4.min.js"></script>
+<!-- Google Map js -->
+<!--<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+	function initialize() {
+	  var mapOptions = {
+		zoom: 15,
+		scrollwheel: false,
+		center: new google.maps.LatLng(23.81033, 90.41252)
+	  };
+
+	  var map = new google.maps.Map(document.getElementById('googleMap'),
+		  mapOptions);
+
+
+	  var marker = new google.maps.Marker({
+		position: map.getCenter(),
+		animation:google.maps.Animation.BOUNCE,
+		icon: 'img/logo/map-marker.png',
+		map: map
+	  });
+
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>-->
+<!-- bootstrap js -->
+<script src="./Public/Home/js/bootstrap.min.js"></script>
+<!-- owl.carousel js -->
+<script src="./Public/Home/js/owl.carousel.min.js"></script>
+<!-- venobox js -->
+<script src="./Public/Home/js/venobox.min.js"></script>
+<!-- meanmenu js -->
+<script src="./Public/Home/js/jquery.meanmenu.js"></script>
+<!-- wow js -->
+<script src="./Public/Home/js/wow.min.js"></script>
+<!-- Nivo slider js --> 		
+<script src="./Public/Home/lib/js/jquery.nivo.slider.js" type="text/javascript"></script>
+<script src="./Public/Home/lib/home.js" type="text/javascript"></script>
+<!-- isotope js -->
+<script src="./Public/Home/js/isotope.pkgd.min.js"></script>
+<!-- plugins js -->
+<script src="./Public/Home/js/plugins.js"></script>
+<!-- main js -->
+<script src="./Public/Home/js/main.js"></script>
+</body>
+</html>
